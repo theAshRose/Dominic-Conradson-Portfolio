@@ -12,6 +12,11 @@
     font-family: serif;
 }
 
+body {
+    color: var(--lblue);
+    background-color: black;
+}
+
 header {
     display: flex;
     flex-direction:row;
@@ -33,7 +38,12 @@ header img {
     max-height: 140px;
 }
 
-a {
+header a {
+    text-decoration: none;
+    color: var(--pink);
+}
+
+footer a {
     text-decoration: none;
     color: var(--pink);
 }
@@ -46,6 +56,59 @@ header nav ul li{
     display: inline-block;
     margin-right:10px;
 }
+
+footer {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-color: var(--ddblue);
+    height: 150px;
+}
+
+#runner {
+    max-height: 300px;
+    float: center;
+ }
+
+footer h1 {
+    font-size: 36px;
+    color: var(--blue);
+    margin: 25px;
+    margin-top: 50px;
+    margin-right: 0px;
+    font-style: italic;
+}
+
+footer ul {
+    display: flex;
+    flex-flow: column;
+    align-content: flex-start;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+footer ul li {
+    display: inline-block;
+    font-size: 18px;
+    color: var(--lblue);
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100vh;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--pink);
+}
+
+
 
 @media screen and (max-width: 992px) {
     header nav{
@@ -65,13 +128,13 @@ header nav ul li{
     header h1 {
         margin-top: 15px;
     }
+
     
-    header img {
-        max-width: 50%;
-    }
 }
 
 @media screen and (max-width: 480px) {
+
+
 
 }
    
