@@ -16,6 +16,14 @@ body {
     background-image: linear-gradient(to left, var(--ddblue), var(--dblue), var(--blue), var(--lblue));
 }
 
+.headerwrapper {
+    display: flex;
+}
+
+.footerwrapper {
+    display: flex;
+}
+
 header {
     display: flex;
     flex-direction:row;
@@ -39,6 +47,7 @@ header h1 {
 header img {
     margin-top: 5px;
     max-height: 140px;
+    margin-left:15px;
 }
 
 header a {
@@ -51,6 +60,7 @@ footer a {
     color: var(--pink);
 }
 
+
 header nav {
     margin-top: 120px;
 }
@@ -61,8 +71,8 @@ header nav ul li{
 }
 
 aside {
-    display: flex;
-    float: left;
+    /* display: flex; */
+    /* float: left; */
     max-width: 400px;
 }
 
@@ -94,6 +104,7 @@ aside {
 main {
     display: flex;
     flex-wrap:wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     flex-grow: 1;
     min-height: 100vh;
@@ -108,19 +119,27 @@ main section {
     width:400px;
 }
 
+.sub-section {
+    display: flex;
+}
+
 main h2{
     height: 400px;
 }
 
-.app {
-    text-align: end;
+.all-content {
+    display: flex;
 }
 
+/* .app {
+    text-align: end;
+} */
 
-.app.current {
+
+/* .app.current {
     background-image: url(../assets/images/mouse.png);
     min-width: 500px;
-    flex: 2 0 200px;
+    flex: 4 0 0;
     margin-right: 100px;
 } 
 
@@ -143,7 +162,7 @@ main h2{
 .app.four {
     background-image: url(../assets/images/etedit.png);
     flex: 1 0 200px;
-} 
+}  */
 
 
 footer {
@@ -176,6 +195,7 @@ footer ul {
     align-content: flex-start;
     margin-top: 25px;
     margin-right: 10px;
+    margin-left: 15px;
 }
 
 footer ul li {
