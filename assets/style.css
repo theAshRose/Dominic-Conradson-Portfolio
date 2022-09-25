@@ -91,7 +91,6 @@ aside {
 #about-me p{
     background-color: var(--ddblue);
     max-width: 400px;
-    max-height: 400px;
     border-color: var(--dblue);
     border-width: 2px;
     border-style: dashed;
@@ -101,10 +100,14 @@ aside {
     
 }
 
+.columnwrapper {
+    flex-direction: column;
+}
+
 main {
     display: flex;
     flex-wrap:wrap;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-evenly;
     flex-grow: 1;
     min-height: 100vh;
@@ -115,16 +118,23 @@ main section {
     border-style: solid var(--blue);
     border-width: 2px;
     margin: 5px;
-    flex: 1 0 200px;
-    width:400px;
+    /* flex: 1 0 200px;  */
+    /* width:400px; */
 }
 
 .sub-section {
     display: flex;
+    flex-wrap:wrap;
+    flex-shrink: 1 0 0;
+}
+
+#bottom img {
+    max-width: 400px;
+    max-height: 200px;
 }
 
 main h2{
-    height: 400px;
+    /* height: 400px; */
 }
 
 .all-content {
@@ -232,8 +242,13 @@ footer ul li {
         margin-top: 15px;
     }
 
+    #bottom {
+        width: 100%;
+    }
 
-    
+    #top img {
+        max-width: 300px;
+    }
 }
 
 @media screen and (max-width: 480px) {
