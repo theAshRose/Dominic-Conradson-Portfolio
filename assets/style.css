@@ -93,36 +93,56 @@ aside {
 
 main {
     display: flex;
-    flex-direction: column;
     flex-wrap:wrap;
     justify-content: space-evenly;
     flex-grow: 1;
     min-height: 100vh;
-    background:#01012b;
+    background: var(--ddblue);
 }
 
 main section {
-    max-width: 500px;
-    max-height: 450px;
     border-style: solid var(--blue);
     border-width: 2px;
     margin: 5px;
     flex: 1 0 200px;
+    width:400px;
+}
+
+main h2{
+    height: 400px;
 }
 
 .app {
-    max-width: 400px;
-    max-height: 200px;
-    min-height:200px;
     text-align: end;
 }
 
 
 .app.current {
     background-image: url(../assets/images/mouse.png);
+    min-width: 500px;
     flex: 2 0 200px;
-    max-width: 500px;
-    max-height: 450px;
+    margin-right: 100px;
+} 
+
+.app.one {
+    background-image: url(../assets/images/hell2.png);
+    flex: 1 0 200px;
+    margin-left: 200px;
+} 
+
+.app.two {
+    background-image: url(../assets/images/frogs.png);
+    flex: 1 0 200px;
+} 
+
+.app.three {
+    background-image: url(../assets/images/rain.png);
+    flex: 1 0 200px;
+} 
+
+.app.four {
+    background-image: url(../assets/images/etedit.png);
+    flex: 1 0 200px;
 } 
 
 
@@ -175,6 +195,10 @@ footer ul li {
     }
     header nav ul li{
         margin: 5px;
+    }
+
+    .app{
+        min-height: 100px;
     }
 }
 
