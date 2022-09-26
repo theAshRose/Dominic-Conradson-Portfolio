@@ -126,19 +126,21 @@ main section {
     /* width:400px; */
 }
 
-#top section{
-    border-style: dashed;
-    border-width: 5px;
-    color: var(--ddblue);
-}
-
+#top section,
 #bottom section{
     border-style: dashed;
     border-width: 5px;
     color: var(--ddblue);
+    transition: 1.5s ease-in 150ms
 }
 
-#top.sub-section{
+#top section:hover,
+#bottom section:hover {
+    border-color: var(--lblue);
+    box-shadow: 0px 3px 45px 34px rgba(255,42,109,0.99);
+}
+
+#top.sub-section {
     align-items: center;
 }
 
