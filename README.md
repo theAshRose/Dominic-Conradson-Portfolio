@@ -28,10 +28,8 @@ some HTML and CSS of clickable images:
                         </h2>
                     </section>
 
-
-```
 corresponding CSS:
-``
+
 .sub-section { /*necessary wrapper for main content*/
     display: flex;
     flex-wrap:wrap;
@@ -58,8 +56,8 @@ corresponding CSS:
     max-height: 200px;
     min-height: 200px;
 }
+```
 
- ``
 ##Credits
 ## Author Links
 [Linkedin](https://www.linkedin.com/in/dominic-conradson-76638b172/)
