@@ -125,6 +125,8 @@ main section {
 .sub-section { /*necessary wrapper for main content*/
     display: flex;
     flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /*borders for main images start*/
@@ -142,15 +144,6 @@ main section {
     box-shadow: 0px 3px 45px 34px var(--pink);
 }
 /*borders for main images end */
-
-#top.sub-section { /*keeping current project centered*/
-    align-items: center;
-}
-
-#bottom.sub-section{  /*flexbox positioning central boxes*/
-    align-items: center;
-    justify-content: space-evenly;
-}
 
 
 #bottom img { /*sizing for smaller central image links*/
