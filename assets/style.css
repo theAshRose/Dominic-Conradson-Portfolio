@@ -1,4 +1,4 @@
-:root {
+:root {  /* our color pallette*/
     --pink: #ff2a6d;
     --lblue: #d1f7ff;
     --blue: #05d9e8;
@@ -9,18 +9,16 @@
 * {
     box-sizing: border-box;
     font-family: serif;
+    color: var(--lblue); /*default font color*/
 }
 
 body {
-    color: var(--lblue);
     background-image: linear-gradient(to left, var(--ddblue), var(--dblue), var(--blue), var(--lblue));
 }
 
-.headerwrapper {
-    display: flex;
-}
 
-.footerwrapper {
+/*header start*/
+.headerwrapper {  /*keeps title and profile pic neatly together*/
     display: flex;
 }
 
@@ -44,26 +42,20 @@ header h1 {
     margin-right: 0px;
 }
 
-header img {
+header img { /*profile pic styling*/
     margin-top: 5px;
     max-height: 140px;
     margin-left:15px;
     margin-bottom: 5px;
 }
 
-header a {
+header a { /*nav links plain and pink*/
     text-decoration: none;
     color: var(--pink);
 }
 
-footer a {
-    text-decoration: none;
-    color: var(--pink);
-}
-
-
-header nav {
-    margin-top: 120px;
+header nav { 
+    margin-top: 100px;
 }
 
 header nav ul li{
@@ -71,13 +63,22 @@ header nav ul li{
     margin-right:10px;
 }
 
+/*header end*/
+
+
+
+.central-content {  /*wrapper for central content*/
+    display: flex;
+}
+
+
+
+/*aside/about me start */
 aside {
-    /* display: flex; */
-    /* float: left; */
     max-width: 400px;
 }
 
-#about-me h1 {
+#about-me h1 { /*about me styling*/
     font-size: 36px;
     color: var(--blue);
     font-style: italic;
@@ -101,10 +102,10 @@ aside {
     font-size:18px;
     
 }
+/*aside/about me end*/
 
-.all-content {
-    display: flex;
-}
+
+/*main section start*/
 
 .columnwrapper {
     flex-direction: column;
@@ -113,109 +114,66 @@ aside {
 main {
     display: flex;
     flex-wrap:wrap;
-    /* flex-direction: column;  */
     justify-content: space-evenly;
     flex-grow: 1;
-    /* min-height: 100vh; */
-    /* background: var(--ddblue); */
 }
 
 main section {
     margin: 5px;
-    /* flex: 1 0 200px;  */
-    /* width:400px; */
 }
 
+.sub-section { /*necessary wrapper for main content*/
+    display: flex;
+    flex-wrap:wrap;
+}
+
+/*borders for main images start*/
 #top section,
 #bottom section{
     border-style: dashed;
     border-width: 5px;
     color: var(--ddblue);
-    transition: 1.5s ease-in 150ms
+    transition: 1.5s ease-in 150ms  /*transition rule*/
 }
 
-#top section:hover,
+#top section:hover,  /*our transition color after hover*/
 #bottom section:hover {
     border-color: var(--lblue);
-    box-shadow: 0px 3px 45px 34px rgba(255,42,109,0.99);
+    box-shadow: 0px 3px 45px 34px var(--pink);
 }
+/*borders for main images end */
 
-#top.sub-section {
+#top.sub-section { /*keeping current project centered*/
     align-items: center;
 }
 
-#bottom.sub-section{
+#bottom.sub-section{  /*flexbox positioning central boxes*/
     align-items: center;
     justify-content: space-evenly;
 }
 
-.sub-section {
-    display: flex;
-    flex-wrap:wrap;
-}
 
-#bottom img {
+#bottom img { /*sizing for smaller central image links*/
     min-width:300px;
     max-width: 300px;
     max-height: 200px;
     min-height: 200px;
 }
 
-.sub-section a{
+.sub-section a{  /*link decoration*/
     text-decoration: none;
+    color: var(--lblue);
+    margin: 2px;
 }
 
-.image-text-link {
+.image-text-link { 
     padding: 2px;
     background-color: var(--dblue);
     font-style:italic;
     font-size: 18px;
 }
 
-section a{
-    color: var(--lblue);
-    margin: 2px;
-}
-
-
-
-
-
-/* .app {
-    text-align: end;
-} */
-
-
-/* .app.current {
-    background-image: url(../assets/images/mouse.png);
-    min-width: 500px;
-    flex: 4 0 0;
-    margin-right: 100px;
-} 
-
-.app.one {
-    background-image: url(../assets/images/hell2.png);
-    flex: 1 0 200px;
-    margin-left: 200px;
-} 
-
-.app.two {
-    background-image: url(../assets/images/frogs.png);
-    flex: 1 0 200px;
-} 
-
-.app.three {
-    background-image: url(../assets/images/rain.png);
-    flex: 1 0 200px;
-} 
-
-.app.four {
-    background-image: url(../assets/images/etedit.png);
-    flex: 1 0 200px;
-}  */
-
-
-footer {
+footer {   /*footer styling*/
     display: flex;
     flex-direction:row;
     justify-content: space-between;
@@ -223,130 +181,158 @@ footer {
     height: 150px;
     border-top-style: solid;
     border-width: 10px;
-    /* margin-bottom: 10px; */
     border-top-color: var(--dblue);
 }
 
-#runner {
-    max-height: 300px;
- }
-
-footer h1 {
+footer h1 {  /*"Contact me" text styling*/
     font-size: 36px;
+    font-style: italic;
     color: var(--blue);
     margin: 25px;
     margin-right: 0px;
-    font-style: italic;
 }
 
-footer ul {
+footer ul { /*footer list sizing and display*/
     display: flex;
     flex-flow: column;
     align-content: flex-start;
     margin-top: 25px;
     margin-right: 10px;
     margin-left: 15px;
+    font-size: 18px;
 }
 
-footer ul li {
+footer ul li { /*footer list styling*/
     display: inline-block;
-    font-size: 18px;
     color: var(--lblue);
     margin-left: 15px;
     margin-bottom: 5px;
 }
 
+footer a { /*footer links*/
+    text-decoration: none;
+    color: var(--pink);
+}
 
-@media screen and (min-width: 1200px) {
+.footerwrapper { /*keeps "contact me" and subsequent list neatly together*/
+    display: flex;
+}
+
+#rain {  /*footer image id*/
+    max-width: 300px;
+ }
+    
+
+
+/*media responsiveness sections below, "main" means main content*/
+
+@media screen and (min-width: 1200px) { /*fixes abnormalities on larger screens*/
     main {
         min-height: 100vh;
     }
     #bottom {
         justify-content: end;
     }
+
+    header nav ul {
+        margin-bottom: 15px;
+    }
 }
 
 
 @media screen and (max-width: 992px) {
     header nav{
-        margin-top: 50px;
+        margin-top: 50px; /*making nav links responsive*/
     }
     header nav ul li{
         margin: 5px;
     }
 
-    .app{
-        min-height: 100px;
+    .headerwrapper h1 { 
+        margin-top: 20px;   /*top-left title responsiveness*/
     }
-
-    .image-text-link {
-       
+    main { /*fixes some cell phones displaying footer up above bottom of page*/
+        min-height: 100vh;
     }
     
 }
 
-
 @media screen and (max-width:768px) {
 
+    /*main responsiveness*/
     .columnwrapper{
         padding-top:15px;
         padding-left: 15px;
         justify-content: space-around;
     }
-    header nav{
-        margin-top: 25px;
-    }
-
-    header h1 {
-        margin-top: 15px;
-    }
-
-    #bottom {
-        width: 100%;
-    }
 
     #top img {
-        max-width: 300px;
+        max-width: 400px;
+    }
+    /*main responsiveness*/
+
+    /*header responsiveness*/
+    header nav{
+        margin-top: 25px;
+        padding-top: 0px;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    #top img {  
+        max-width: 300px;      /*fixes awkward sizing for #top image*/
     }
 }
+
+
 
 @media screen and (max-width: 480px) {
 
-section {
-    max-height: 300px;
-}
-
+    /*main responsiveness*/
 .columnwrapper {
-    padding: 0px;
+    padding: 0px; /*lets objects in main section squeeze in closer in smaller view*/
 }
 
-/* #bottom { */
-    /* margin-left:10px; */
-    /* justify-content: center; */
+/*header responsiveness*/
+.headerwrapper h1 {
+    margin-top:20px;
 }
 
-.image-text-link {
-    
+header nav {
+    margin-top:5px;
 }
 
+header nav ul li {
+    margin: 2px;
+}
+/*header responsiveness*/
 
+}
 
+/*fixed responsiveness in awkward situations relating to screen height*/
 @media screen and (max-height:768px) {
+    /*header responsiveness*/
     header nav{
-        margin-top: 25px;
+        margin-top: 10px;
+        margin-bottom: 25px;
     }
 
     header h1 {
         margin-top: 15px;
+        margin-bottom: 15px;
     }
+    /*header responsiveness*/
 
+    /*main responsiveness*/
     #bottom {
         width: 100%;
-    }
+    }                        
 
     #top img {
         max-width: 300px;
     }
+    /* main responsiveness*/
 
 }
    
