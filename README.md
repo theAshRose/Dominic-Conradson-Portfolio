@@ -4,8 +4,8 @@
 
 My proffesional dev portfolio showcasing all web apps/designs thus far. Listed from most recent to oldest, join me on this journey. It is and likely will always be a work in progress.
 
-## Sample Usage
-Fully responsive layout with a fun pink glow to the images upon cursor hover. Click to your hearts content!
+## Usage
+Fully responsive layout with a fun pink glow to the images upon cursor hover. Please, click to your hearts content! Examine this page and subsequent links to determine my eligibility for employment. 
 ![screenshot](./assets/images/portfolioscreen.png)
 
 [an actual link to the page](https://thedomconrad.github.io/Dominic-Conradson-Portfolio/)
