@@ -60,6 +60,6 @@ corresponding CSS:
 
 ##Credits
 ## Author Links
-[Linkedin](https://www.linkedin.com/in/dominic-conradson-76638b172/)
-[GitHub](https://github.com/theDomConrad/)
-[Portfolio] https://thedomconrad.github.io/Dominic-Conradson-Portfolio/
+---[Linkedin](https://www.linkedin.com/in/dominic-conradson-76638b172/)---
+[GitHub](https://github.com/theDomConrad/)---
+[Portfolio](https://thedomconrad.github.io/Dominic-Conradson-Portfolio/)---
