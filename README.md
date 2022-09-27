@@ -14,9 +14,22 @@ Fully responsive layout with a fun pink glow to the images upon cursor hover. Cl
 some HTML and CSS of clickable images:
 
 ```
-<div id="bottom" class="sub-section">
-                    
-                    <section>
+<main>
+                <section id="top" class="sub-section">
+                    <figure>
+                        <a target="_blank" href="https://thedomconrad.github.io/Dominic-Conradson-Portfolio/">
+                            <img src="./assets/images/mouse.png" alt="mouse">
+                        </a>
+                        <h2 class="image-text-link" id="current-project"><a target="_blank" href="">
+                                My portfolio!
+                                <br>the 3rd webpage from scratch
+                            </a>
+                        </h2>
+                    </figure>
+                </section>
+
+                <section id="bottom" class="sub-section">
+                    <figure>
                         <a target="_blank" href="https://thedomconrad.github.io/prework-study-guide/">
                             <img src="./assets/images/hell2.png" alt="hell">
                         </a>
@@ -26,29 +39,26 @@ some HTML and CSS of clickable images:
                                 <br>from source code, a study guide
                             </a>
                         </h2>
-                    </section>
+                    </figure>
 
 corresponding CSS:
 
-.sub-section { /*necessary wrapper for main content*/
-    display: flex;
-    flex-wrap:wrap;
-}
-
 /*borders for main images start*/
-#top section,
-#bottom section{
+#top figure,
+#bottom figure{
     border-style: dashed;
     border-width: 5px;
     color: var(--ddblue);
     transition: 1.5s ease-in 150ms  /*transition rule*/
 }
 
-#top section:hover,  /*our transition color after hover*/
-#bottom section:hover {
+#top figure:hover,  /*our transition color after hover*/
+#bottom figure:hover {
     border-color: var(--lblue);
     box-shadow: 0px 3px 45px 34px var(--pink);
 }
+/*borders for main images end */
+
 
 #bottom img { /*sizing for smaller central image links*/
     min-width:300px;
@@ -56,6 +66,14 @@ corresponding CSS:
     max-height: 200px;
     min-height: 200px;
 }
+
+.image-text-link {  /*styling for image titles*/
+    padding: 2px;
+    background-color: var(--dblue);
+    font-style:italic;
+    font-size: 18px;
+}
+
 ```
 
 ##Credits
